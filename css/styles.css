@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    max-width: 500px;
+    border: solid 2px black;
+    margin: auto;
+    padding: 50px 100px 50px;
+}
+.title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.register{
+    color: #46a358
+}
+.enter{
+    text-align: center;
+    margin-bottom: 14px;"
+}
+.form{
+    width: 300px;
+    margin: auto;
+    text-align: center
+}
+.username{
+    color: #a5a5a5;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    width: 300px;
+    padding-left: 14px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin-bottom: 16px;
+}
+.email{
+    color: #a5a5a5;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    width: 300px;
+    padding-left: 14px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin-bottom: 16px;
+}
+.password{
+    color: #a5a5a5;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    width: 300px;
+    padding-left: 14px; padding-bottom: 12px;
+    padding-top: 12px; margin-bottom: 16px;
+}
+.confirm{
+    color: #a5a5a5;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    width: 300px;
+    padding-left: 14px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin-bottom: 41px;
+}
+.button{
+    border: 1px solid #46a358;
+    border-radius: 5px;
+    width: 300px;
+    height: 45px;
+    background: #46a358;
+    margin-bottom: 36px;
+    color: #fff
+}
+.text{
+    margin-bottom: 27px;
+    text-align: center
+}
+.google_link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #727272;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+.google{
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+}
+.facebook_link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #727272;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+.facebook{
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
