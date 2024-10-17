@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 a{
     display: inline-block;
@@ -21,7 +22,7 @@ a{
 }
 .enter{
     text-align: center;
-    margin-bottom: 14px;"
+    margin-bottom: 14px;
 }
 .form{
     width: 300px;
@@ -137,14 +138,12 @@ header nav a{
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
-    text-decoration: none;
 }
 header .login{
     font-family: "Cera Pro", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #ffffff;
-    text-decoration: none;
     padding: 7px 17px;
     background: #46a358;
     border-radius: 6px;
@@ -173,16 +172,18 @@ header nav li:hover:after{
     width: 100%;
 }
 main .container{
-    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-main .greenshop_information{
+main .banner .container{
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+}
+.banner .greenshop_information{
     font-family: "Cera Pro", sans-serif;
     max-width: 557px;
 }
-main .welcom{
+.banner .welcom{
     display: inline-block;
     font-weight: 500;
     font-size: 14px;
@@ -192,7 +193,7 @@ main .welcom{
     color: #3d3d3d;
     margin: 68px 0 7px 43px;
 }
-main .slogan{
+.banner .slogan{
     font-weight: 900;
     font-size: 70px;
     line-height: 100%;
@@ -201,10 +202,10 @@ main .slogan{
     margin-bottom: 5px;
     margin-left: 40px;
 }
-main .planet{
+.banner .planet{
     color: #46a358;
 }
-main .shop_description{
+.banner .shop_description{
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
@@ -212,7 +213,7 @@ main .shop_description{
     margin-bottom: 44px;
     margin-left: 43px;
 }
-main .shop_now{
+.banner .shop_now{
     font-weight: 700;
     font-size: 16px;
     line-height: 125%;
@@ -224,11 +225,133 @@ main .shop_now{
     background: #46a358;
     margin-left: 41px;
 }
-main .plants{
+.banner .plants{
     width: 507px;
 }
+main .banner{
+    margin-bottom: 26px;
+}
+.product .left_side{
+    max-width: 310px;
+    background: #fbfbfb;
+}
+.product .categories{
+    margin-bottom: 7px;
+    margin-left: 18px;
+    padding-top: 14px
+}
+.product ul li{
+    margin-bottom: 7px;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 267%;
+    color: #46a358;
+}
+.product .plants_kinds{
+    margin-bottom: 366px;
+}
+.product .right-side{
+    max-width: 840px;
 
-
+}
+.product .product_sort{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+}
+.product .product_sort ul{
+    display: flex;
+}
+.product .product_sort li{
+    margin-right: 40px;
+}
+.product .product_sort p:after{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    background-image: url("../img/Arrow - Down 2.svg");
+    margin-left: 2px;
+}
+.product .main_product_items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product article{
+    max-width: 258px;
+    margin-bottom: 70px;
+}
+.product .price{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+}
+.product .product_img{
+    background: #fbfbfb;
+    margin-bottom: 12px;
+}
+.product .product_name{
+    margin-bottom: 6px;
+}
+.product .product_sort li:after{
+    display: block;
+    width: 0;
+    content: "";
+    background-color: #46a358;
+    height: 3px;
+    margin-top: 1px;
+    transition: 0.4s;
+}
+.product .product_sort li:hover:after{
+    width: 100%;
+}
+.product .product_sort li a{
+    transition: 0.4s;
+}
+.product .product_sort li a:hover{
+    color: #46a358;
+}
+.product .plants_kinds li a{
+    color: #3d3d3d;
+    transition: 0.4s;
+}
+.product .plants_kinds li a:hover{
+    color: #46a358;
+}
+.container .list_pager li a{
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    transition: 0.4s;
+}
+.container .list_pager li a:hover{
+    background-color: #46a358;
+    color: white;
+}
+main .container .list_pager{
+    display: flex;
+    justify-content: space-between;
+    max-width: 215px;
+    margin-top: 90px;
+    margin-left: 506px;
+}
+.container .list_pager li:last-of-type a{
+    background-image: url("../img/Arrow - Right 2.svg");
+    background-size: contain;
+}
+.container .list_pager li:last-of-type:hover a{
+    background-image: url("../img/Arrow - Right_white.svg");
+}
 
 
 
