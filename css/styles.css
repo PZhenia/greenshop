@@ -1,3 +1,58 @@
+@font-face {
+    font-family: 'cera_prolight';
+    src: url('../fonts/cerapro-light-webfont.eot');
+    src: url('../fonts/cerapro-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-light-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-light-webfont.woff') format('woff'),
+    url('../fonts/cerapro-light-webfont.ttf') format('truetype'),
+    url('../fonts/cerapro-light-webfont.svg#cera_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cera_proregular';
+    src: url('../fonts/cerapro-regular-webfont.eot');
+    src: url('../fonts/cerapro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-regular-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-regular-webfont.woff') format('woff'),
+    url('../fonts/cerapro-regular-webfont.ttf') format('truetype'),
+    url('../fonts/cerapro-regular-webfont.svg#cera_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cera_promedium';
+    src: url('../fonts/cerapro-medium-webfont.eot');
+    src: url('../fonts/cerapro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-medium-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-medium-webfont.woff') format('woff'),
+    url('../fonts/cerapro-medium-webfont.ttf') format('truetype'),
+    url('../fonts/cerapro-medium-webfont.svg#cera_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cera_probold';
+    src: url('../fonts/cerapro-bold-webfont.eot');
+    src: url('../fonts/cerapro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-bold-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-bold-webfont.woff') format('woff'),
+    url('../fonts/cerapro-bold-webfont.ttf') format('truetype'),
+    url('../fonts/cerapro-bold-webfont.svg#cera_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cera_problack';
+    src: url('../fonts/cerapro-black-webfont.eot');
+    src: url('../fonts/cerapro-black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-black-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-black-webfont.woff') format('woff'),
+    url('../fonts/cerapro-black-webfont.ttf') format('truetype'),
+    url('../fonts/cerapro-black-webfont.svg#cera_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
     padding: 0;
     margin: 0;
@@ -184,6 +239,7 @@ main .banner .container{
     max-width: 557px;
 }
 .banner .welcom{
+    font-family: 'cera_promedium';
     display: inline-block;
     font-weight: 500;
     font-size: 14px;
@@ -206,6 +262,7 @@ main .banner .container{
     color: #46a358;
 }
 .banner .shop_description{
+    font-family: 'cera_proregular';
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
@@ -214,6 +271,7 @@ main .banner .container{
     margin-left: 43px;
 }
 .banner .shop_now{
+    font-family: 'cera_probold';
     font-weight: 700;
     font-size: 16px;
     line-height: 125%;
@@ -236,11 +294,17 @@ main .banner{
     background: #fbfbfb;
 }
 .product .categories{
+    font-family: 'cera_proregular';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
     margin-bottom: 7px;
     margin-left: 18px;
     padding-top: 14px
 }
 .product ul li{
+    font-family: 'cera_prolight';
     margin-bottom: 7px;
     margin-left: 30px;
     font-weight: 700;
@@ -264,11 +328,23 @@ main .banner{
     line-height: 107%;
     color: #3d3d3d;
 }
+.product .sorting{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+}
 .product .product_sort ul{
     display: flex;
 }
 .product .product_sort li{
+    font-family: 'cera_proregular';
     margin-right: 40px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
 }
 .product .product_sort p:after{
     content: "";
@@ -288,6 +364,7 @@ main .banner{
     margin-bottom: 70px;
 }
 .product .price{
+    font-family: 'cera_probold';
     font-weight: 700;
     font-size: 18px;
     line-height: 89%;
@@ -299,6 +376,10 @@ main .banner{
 }
 .product .product_name{
     margin-bottom: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
 }
 .product .product_sort li:after{
     display: block;
