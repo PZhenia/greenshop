@@ -61,6 +61,7 @@
 }
 a{
     display: inline-block;
+    color: inherit;
 }
 .box{
     max-width: 500px;
@@ -226,7 +227,17 @@ header nav li:after{
 header nav li:hover:after{
     width: 100%;
 }
-main .container{
+main  .banner .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main  .product .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main  .information .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -374,6 +385,7 @@ main .banner{
     margin-bottom: 12px;
 }
 .product .product_name{
+    font-family: 'cera_proregular';
     margin-bottom: 6px;
     font-weight: 400;
     font-size: 16px;
@@ -435,7 +447,7 @@ main .container .list_pager{
 main .product{
     margin-bottom: 219px;
 }
-.information .find_more{
+.information a{
     display: inline-flex;
     align-items: center;
     font-family: 'cera_prolight';
@@ -447,7 +459,7 @@ main .product{
     border-radius: 6px;
     background: #46a358;
 }
-.information .find_more:after{
+.information a:after{
     content: "";
     display: inline-block;
     width: 18px;
@@ -455,7 +467,7 @@ main .product{
     background-image: url("../img/Arrow - Right.svg");
     margin-right: 6px;
 }
-.information .summer_cactus{
+.information article{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -463,15 +475,7 @@ main .product{
     max-width: 586px;
     background: #fbfbfb;
 }
-.information .styling_trends{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: right;
-    max-width: 586px;
-    background: #fbfbfb;
-}
-.information .summer_cactus_title{
+.information h4{
     font-family: 'cera_problack';
     font-weight: 900;
     font-size: 18px;
@@ -481,17 +485,7 @@ main .product{
     color: #3d3d3d;
     margin-bottom: 9px;
 }
-.information .styling_trends_title{
-    font-family: 'cera_problack';
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 133%;
-    text-transform: uppercase;
-    text-align: right;
-    color: #3d3d3d;
-    margin-bottom: 9px;
-}
-.information .online_shop_text{
+.information p{
     font-family: 'cera_prolight';
     font-weight: 400;
     font-size: 14px;
@@ -504,11 +498,96 @@ main .product{
     max-width: 292px;
     margin-right: 30px;
 }
-.blog_posts .posts article{
-    max-width: 268px;
+main .information{
+    margin-bottom: 138px;
+}
+.blog_posts h2{
+    font-family: 'cera_probold';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 53%;
+    text-align: center;
+    color: #3d3d3d;
+    margin-bottom: 15px;
+}
+.blog_posts .online_plant_shop{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: center;
+    color: #727272;
+    margin-bottom: 35px;
+}
+.blog_posts .posts{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
+.blog_posts .posts article{
+    max-width: 268px;
+    padding-bottom: 13px;
+    background: #fbfbfb;
+}
+.blog_posts .article_information{
+    text-align: left;
+    margin-left: 15px;
+}
+.blog_posts .green_text{
+    font-family: 'cera_promedium';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #46a358;
+    margin-bottom: 4px;
+}
+.blog_posts h3{
+    font-family: 'cera_probold';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #3d3d3d;
+    margin-bottom: 9px;
+}
+.blog_posts img{
+    margin-bottom: 9px;
+}
+.blog_posts .article_text{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+    margin-bottom: 9px;
+}
+.blog_posts a{
+    font-family: 'cera_promedium';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #3d3d3d;
+    display: flex;
+    align-items: center;
+}
+.blog_posts a:hover{
+    color: #46a358;
+}
+.blog_posts a:after{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/ArrowStraight - Right.svg");
+    margin-right: 9px;
+    transition: 0.4s;
+}
+.blog_posts a:hover:after{
+    background-image: url("../img/ArrowStraight - RightGreen.svg");
+}
+main .blog_posts .container{
+    padding-bottom: 100px;
+}
+
 
 
 
