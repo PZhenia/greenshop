@@ -278,7 +278,6 @@ main .banner .container{
     padding: 11px 27px;
     text-transform: uppercase;
     color: #fff;
-    text-decoration: none;
     border-radius: 6px;
     background: #46a358;
     margin-left: 41px;
@@ -432,6 +431,83 @@ main .container .list_pager{
 }
 .container .list_pager li:last-of-type:hover a{
     background-image: url("../img/Arrow - Right_white.svg");
+}
+main .product{
+    margin-bottom: 219px;
+}
+.information .find_more{
+    display: inline-flex;
+    align-items: center;
+    font-family: 'cera_prolight';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    padding: 11px 28px;
+    color: #fff;
+    border-radius: 6px;
+    background: #46a358;
+}
+.information .find_more:after{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/Arrow - Right.svg");
+    margin-right: 6px;
+}
+.information .summer_cactus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    max-width: 586px;
+    background: #fbfbfb;
+}
+.information .styling_trends{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    max-width: 586px;
+    background: #fbfbfb;
+}
+.information .summer_cactus_title{
+    font-family: 'cera_problack';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 133%;
+    text-transform: uppercase;
+    text-align: right;
+    color: #3d3d3d;
+    margin-bottom: 9px;
+}
+.information .styling_trends_title{
+    font-family: 'cera_problack';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 133%;
+    text-transform: uppercase;
+    text-align: right;
+    color: #3d3d3d;
+    margin-bottom: 9px;
+}
+.information .online_shop_text{
+    font-family: 'cera_prolight';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: right;
+    color: #727272;
+    margin-bottom: 25px;
+}
+.information .product_overview{
+    max-width: 292px;
+    margin-right: 30px;
+}
+.blog_posts .posts article{
+    max-width: 268px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
