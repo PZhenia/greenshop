@@ -232,10 +232,11 @@ main  .banner .container{
     justify-content: space-between;
     align-items: center;
 }
-main  .product .container{
+main  .product .main_content_flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 90px;
 }
 main  .information .container{
     display: flex;
@@ -300,7 +301,7 @@ main .banner{
     margin-bottom: 26px;
 }
 .product .left_side{
-    max-width: 310px;
+    max-width: 320px;
     background: #fbfbfb;
 }
 .product .categories{
@@ -311,19 +312,19 @@ main .banner{
     color: #3d3d3d;
     margin-bottom: 7px;
     margin-left: 18px;
-    padding-top: 14px
+    padding-top: 14px;
 }
-.product ul li{
+.product .plants_kinds li{
+    margin-left: 30px;
     font-family: 'cera_prolight';
     margin-bottom: 7px;
-    margin-left: 30px;
     font-weight: 700;
     font-size: 15px;
     line-height: 267%;
     color: #46a358;
 }
 .product .plants_kinds{
-    margin-bottom: 366px;
+    margin-bottom: 240px;
 }
 .product .right-side{
     max-width: 840px;
@@ -418,6 +419,10 @@ main .banner{
     color: #46a358;
 }
 .container .list_pager li a{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 175%;
+    color: #3d3d3d;
     border: 1px solid #e5e5e5;
     border-radius: 4px;
     width: 35px;
@@ -432,10 +437,11 @@ main .banner{
 }
 main .container .list_pager{
     display: flex;
-    justify-content: space-between;
-    max-width: 215px;
-    margin-top: 90px;
-    margin-left: 506px;
+    justify-content: right;
+    gap: 10px;
+    max-width: 100%;
+    margin-bottom: 94px;
+
 }
 .container .list_pager li:last-of-type a{
     background-image: url("../img/Arrow - Right 2.svg");
@@ -443,9 +449,6 @@ main .container .list_pager{
 }
 .container .list_pager li:last-of-type:hover a{
     background-image: url("../img/Arrow - Right_white.svg");
-}
-main .product{
-    margin-bottom: 219px;
 }
 .information a{
     display: inline-flex;
