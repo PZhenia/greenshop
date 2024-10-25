@@ -370,9 +370,83 @@ main .banner{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.product article{
+.product article .sale{
+    position: absolute;
+    background-color: #46a358;
+    padding: 7px 9px;
+    left: 0;
+    top: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    font-family: 'cera_promedium';
+}
+.product .main_product_items li.image1 a:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/shopping 1.svg');
+    transition: 0.4s;
+}
+.product .main_product_items li.image1 a:hover:before{
+    background-image: url('../img/shopping 1 Green.svg');
+}
+.product .main_product_items li.image2 a:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/heart 1.svg');
+}
+.product .main_product_items li.image2 a:hover:before{
+    background-image: url('../img/heart 1 Green.svg');
+}
+.product .main_product_items li.image3 a:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/Frame.svg');
+}
+.product .main_product_items li.image3 a:hover:before{
+    background-image: url('../img/Frame Green.svg');
+}
+.product .price span{
+    font-family: 'cera_proregular';
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 89%;
+    color: #a5a5a5;
+    margin-left: 17px;
+}
+.product article {
     max-width: 258px;
     margin-bottom: 70px;
+    border-top: solid 1px transparent;
+    position: relative;
+}
+.product article:hover {
+    border-top: solid 1px #46a358;
+}
+.product .main_product_items ul {
+    position: absolute;
+    display: none;
+    gap: 10px;
+    bottom: 57px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 125px;
+}
+.product article:hover ul{
+    display: flex;
+}
+.product .main_product_items li{
+    background-color: white;
+    border-radius: 4px;
+    padding: 6px;
 }
 .product .price{
     font-family: 'cera_probold';
