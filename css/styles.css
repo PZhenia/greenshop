@@ -664,7 +664,76 @@ main .information{
 main .blog_posts .container{
     padding-bottom: 100px;
 }
-
+header nav .dropdown{
+    position: relative;
+}
+header nav .sub_menu{
+    position: absolute;
+    min-width: 188px;
+    flex-direction: column;
+    gap: 0;
+    top: 40px;
+    display: none;
+    padding-top: 20px;
+}
+header nav .dropdown:hover .sub_menu{
+    display: flex;
+}
+header nav .sub_menu li{
+    background-color: #edf6ee;
+}
+header nav .sub_menu a{
+    padding: 7px 14px;
+    display: block;
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+header nav .sub_menu li:after{
+    display: none;
+}
+header nav .sub_menu li.dropdown_2:after{
+    content: "";
+    display: block;
+    background-image: url("../img/Frame 9.svg");
+    width: 8px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    right: 19px;
+    margin-top: 0;
+    transition: 0.2s;
+    background-color: #edf6ee;
+}
+header nav .dropdown_2{
+    position: relative;
+}
+header nav li.dropdown_2:hover:after{
+    transform: rotate(180deg);
+    background-color: #1a712a;
+    background-image: url("../img/Frame 9White.svg");
+}
+header nav .dropdown_2:hover{
+    background-color: #1a712a;
+}
+header nav .dropdown_2:hover > a{ /* > - стиль лише для першого рівня а*/
+    color: #fff;
+}
+header nav .sub_menu_2{
+    position: absolute;
+    min-width: 188px;
+    flex-direction: column;
+    gap: 0;
+    top: -110px;
+    left: 100%;
+    display: none;
+    padding-top: 20px;
+    padding-left: 2px;
+}
+header nav .dropdown_2:hover .sub_menu_2{
+    display: flex;
+}
 
 
 
