@@ -714,10 +714,10 @@ header nav li.dropdown_2:hover:after{
     background-color: #1a712a;
     background-image: url("../img/Frame 9White.svg");
 }
-header nav .dropdown_2:hover{
+header nav .sub_menu li:hover {
     background-color: #1a712a;
 }
-header nav .dropdown_2:hover > a{ /* > - стиль лише для першого рівня а*/
+header nav .sub_menu li:hover > a {
     color: #fff;
 }
 header nav .sub_menu_2{
