@@ -249,6 +249,7 @@ main .banner .container{
 .banner .greenshop_information{
     font-family: "Cera Pro", sans-serif;
     max-width: 557px;
+    padding: 40px;
 }
 .banner .welcom{
     font-family: 'cera_promedium';
@@ -259,7 +260,7 @@ main .banner .container{
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #3d3d3d;
-    margin: 68px 0 7px 43px;
+    margin-bottom: 7px;
 }
 .banner .slogan{
     font-weight: 900;
@@ -268,7 +269,6 @@ main .banner .container{
     text-transform: uppercase;
     color: #3d3d3d;
     margin-bottom: 5px;
-    margin-left: 40px;
 }
 .banner .planet{
     color: #46a358;
@@ -280,7 +280,6 @@ main .banner .container{
     line-height: 171%;
     color: #727272;
     margin-bottom: 44px;
-    margin-left: 43px;
 }
 .banner .shop_now{
     font-family: 'cera_probold';
@@ -292,7 +291,34 @@ main .banner .container{
     color: #fff;
     border-radius: 6px;
     background: #46a358;
-    margin-left: 41px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.banner .shop_now::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #2b6f3a;
+    z-index: 0;
+}
+.banner .shop_now:hover::before {
+    animation: fill 1s;
+}
+.banner .shop_now span {
+    position: relative;
+    z-index: 1;
+}
+@keyframes fill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
 .banner .plants{
     width: 507px;
@@ -493,6 +519,7 @@ main .banner{
     color: #46a358;
 }
 .container .list_pager li a{
+    font-family: 'cera_proregular';
     font-weight: 300;
     font-size: 18px;
     line-height: 175%;
@@ -520,6 +547,7 @@ main .container .list_pager{
 .container .list_pager li:last-of-type a{
     background-image: url("../img/Arrow - Right 2.svg");
     background-size: contain;
+
 }
 .container .list_pager li:last-of-type:hover a{
     background-image: url("../img/Arrow - Right_white.svg");
@@ -757,7 +785,7 @@ main .blog_posts{
 .contact_data .form_desc{
     max-width: 354px;
 }
-form{
+.contact_data form{
     display: flex;
     justify-content: center;
     margin-bottom: 18px;
@@ -795,7 +823,7 @@ form{
     color: #3d3d3d;
     margin-bottom: 9px;
 }
-form input{
+.contact_data form input{
     border-radius: 6px 0 0 6px;
     width: 354px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
@@ -808,7 +836,7 @@ form input{
     color: #acacac;
     padding-left: 11px;
 }
-form button{
+.contact_data form button{
     border-radius: 0 6px 6px 0;
     width: 85px;
     background: #46a358;
@@ -959,6 +987,7 @@ footer .container::after{
     height: 1px;
     background: rgba(70, 163, 88, 0.2);
 }
+
 
 
 
